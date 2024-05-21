@@ -30,7 +30,7 @@ const ProductList = () => {
   ];
 
   return (
-    <div>
+    <>
       <div className='slidingInfo'>
         <h1>Our Latest Products</h1>
         <div className='productBar'>
@@ -56,7 +56,7 @@ const ProductList = () => {
         </div>
         <button className='nextButton'> <img src={nextButton} /></button>
       </div>
-    </div>
+    </>
   );
 };
 
