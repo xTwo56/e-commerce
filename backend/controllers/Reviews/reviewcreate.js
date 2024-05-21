@@ -1,6 +1,6 @@
 // import model 
-const Product = require("../models/product");
-const Review = require("../models/review");
+const Product = require("../../models/product");
+const Review = require("../../models/review");
 const { response } = require("express");
 
 exports.createComment = async (req, res) => {

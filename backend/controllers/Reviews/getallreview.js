@@ -1,4 +1,4 @@
-const Product = require("../models/product");
+const Product = require("../../models/product");
 
 exports.getAllReview = async(req,res)=>{
     try{

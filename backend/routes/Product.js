@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { createProduct } = require("../controllers/createProduct");
-const { deleteProduct } = require("../controllers/deleteproduct");
-const { getAllProducts } = require("../controllers/getallproducts");
-const { updateProduct } = require("../controllers/updateProduct");
-const { createComment } = require("../controllers/reviewcreate");
-const { getAllReview } = require("../controllers/getallreview");
+const { createProduct } = require("../controllers/Products/createProduct");
+const { deleteProduct } = require("../controllers/Products/deleteproduct");
+const { getAllProducts } = require("../controllers/Products/getallproducts");
+const { updateProduct } = require("../controllers/Products/updateProduct");
+const { createComment } = require("../controllers/Reviews/reviewcreate");
+const { getAllReview } = require("../controllers/Reviews/getallreview");
 
 
 
