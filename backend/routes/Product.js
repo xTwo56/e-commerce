@@ -12,6 +12,14 @@ const { login } = require("../controllers/Auth/Auth");
 const { auth } = require("../middlewares/auth");
 const { searchProductsByCategory } = require("../controllers/Products/findspecific");
 const { getproductsbyID } = require("../controllers/Products/findbyid");
+const { createCart } = require("../controllers/Cart/cartcreate");
+const { deleteCart } = require("../controllers/Cart/deletecart");
+const { getAllCartUser } = require("../controllers/Cart/getallcart");
+
+router.post("/deletecart/:id",deleteCart);
+router.post("/createcart",createCart);
+router.get("/getallcart",getAllCartUser);
+
 router.get("/findspecific",searchProductsByCategory);
 router.get("/getproductbyID/:id",getproductsbyID);
 

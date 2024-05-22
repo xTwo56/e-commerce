@@ -14,9 +14,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  cart:{
-    type:Object,
-  },
+  cart : [{
+    type : mongoose.Schema.Types.ObjectId,
+    ref : "Cart",
+  }],
   date:{
     type:Date,
     default:Date.now,
