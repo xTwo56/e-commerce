@@ -9,7 +9,7 @@ exports.getAllCartUser = async(req,res)=>{
        
         let finder = decode.id;
         const cart = await User.findById({_id:finder})
-            .populate("cart") //Populates the comment array with the comments document
+            .populate("cart") 
             .exec();
 
         console.log("Fetched successfully");
