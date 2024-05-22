@@ -9,6 +9,7 @@ exports.createProduct = async(req,res)=>{
             category:req.body.category,
             new_price:req.body.new_price,
             old_price:req.body.old_price,
+            quantity:req.body.quantity,
             material:req.body.material,
             available:req.body.available,
             product_details:req.body.product_details,

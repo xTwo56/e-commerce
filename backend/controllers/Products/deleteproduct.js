@@ -2,7 +2,7 @@ const Product = require("../../models/product");
 
 exports.deleteProduct = async(req,res)=>{
     try{
-        await Product.findOneAndDelete({id:req.body.id});
+        await Product.findOneAndDelete({_id:req.body.id});
         console.log("Deleted successfully");
         return res.status(200).json({
             status: 201,
