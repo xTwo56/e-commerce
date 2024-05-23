@@ -18,6 +18,10 @@ const userSchema = new mongoose.Schema({
     type : mongoose.Schema.Types.ObjectId,
     ref : "Cart",
   }],
+  wishlist : [{
+    type : mongoose.Schema.Types.ObjectId,
+    ref : "Wishlist",
+  }],
   date:{
     type:Date,
     default:Date.now,

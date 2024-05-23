@@ -15,6 +15,13 @@ const { getproductsbyID } = require("../controllers/Products/findbyid");
 const { createCart } = require("../controllers/Cart/cartcreate");
 const { deleteCart } = require("../controllers/Cart/deletecart");
 const { getAllCartUser } = require("../controllers/Cart/getallcart");
+const { createWishlist } = require("../controllers/Wishlist/createwishlist");
+const { deleteWishlist } = require("../controllers/Wishlist/deletewishlist");
+const { getAllWishlistUser } = require("../controllers/Wishlist/getallwishlist");
+
+router.get("/getallwishlist",getAllWishlistUser);
+router.post("/deletewishlist/:id",deleteWishlist);
+router.post("/createwishlist",createWishlist);
 
 router.post("/deletecart/:id",deleteCart);
 router.post("/createcart",createCart);

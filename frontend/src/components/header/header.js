@@ -8,7 +8,19 @@ import logo2 from '../../assets/logo2.jpeg';
 import s2 from '../../assets/s2.png';
 import s3 from '../../assets/s3.jpeg'
 import dash from '../../assets/dash.png';
+import { useState } from "react";
+import Womendrop from "./hover";
 function Dashboard() {
+    const [isWomenDropdownOpen, setIsWomenDropdownOpen] = useState(false);
+
+    const handleWomenMouseEnter = () => {
+      setIsWomenDropdownOpen(true);
+    };
+  
+    const handleWomenMouseLeave = () => {
+      setIsWomenDropdownOpen(false);
+    };
+
     return (
         <div className="dashboard">
             <br></br>
@@ -25,13 +37,14 @@ function Dashboard() {
 
             <hr></hr>
             <div className="flex flex-nav">
-                <div>WOMEN</div>
+                <div onMouseEnter={handleWomenMouseEnter} onMouseLeave={handleWomenMouseLeave}>WOMEN</div>
                 <div>MEN</div>
                 <div>FABRICS</div>
                 <div>PERSONAL CARE</div>
                 <div>HOME DECOR</div>
                 <div>GALLERY</div>
             </div>
+            {isWomenDropdownOpen && <Womendrop />}
             <hr></hr>
             <div className="flex flex-outer">
                 <div>

@@ -1,0 +1,27 @@
+.Main_box{
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+}
+
+.Apparel{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+   margin: 10px;
+   justify-content: left;
+   align-items: center;
+}
+
+.top{
+    padding-bottom: 20px;
+    padding-top: 10px ;
+}
+.subclass{
+    margin-left: 10px;
+    background-color: saddlebrown;
+}
