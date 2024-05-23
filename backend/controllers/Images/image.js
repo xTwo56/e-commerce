@@ -1,20 +1,21 @@
-{/*const multer = require('multer');
-const path = require('path');
+const express = require('express');
+const router = express.Router();
+const upload = require("../../middlewares/multer");
+const cloudinary = require('./cloudinary');
 
-const storage = multer.diskStorage({
-    destination:'./upload/images',
-    filename:(req,file,cb)=>{
-        return(null,`${file.filename}_${Date.now()}${path.extname(file)}`)
-    }
-});
-
-const upload = multer({storage:storage})
-
-app.use('/images',express.static('upload/images'))
-
-app.post("/upload",upload.single('product'),(req,res)=>{
-     res.json({
-        success:1,
-        image_url:`http://localhost:${port}/images/${req.file.filename}`
-     })
-})*/}
+router.post("/upload",upload.single('image'),function (req,res){
+    cloudinary.uploader.upload(req.file.path,function(err,result){
+        if(err){
+            return res.status(500).json({
+                success:false
+            })
+        }
+        else{
+            res.status(200).json({
+                success:true,
+                data:result
+            })
+        }
+    })
+})
+module.exports = router;

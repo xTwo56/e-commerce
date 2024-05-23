@@ -3,7 +3,7 @@ const Product = require("../../models/product");
 
 exports.searchProductsByCategory = async (req, res) => {
     try {
-      const { maincategory, subcategories,lastcategories,material } = req.body;
+      const { maincategory, subcategories,lastcategories,material } = req.params;
   
     
       let query = {};

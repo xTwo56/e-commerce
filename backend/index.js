@@ -6,7 +6,7 @@ const path= require('path');
 const cors = require('cors');
 const dbConnect= require('./config/database');
 const createroute = require('./routes/Product');
-
+const imager = require('./controllers/Images/image');
 
 app.use(express.json());
 app.use(cors());
@@ -16,6 +16,7 @@ dbConnect();
 
 
 app.use("/",createroute);
+app.use("/",imager);
 
 app.listen(port,(error)=>{
     if(!error){

@@ -27,7 +27,7 @@ router.post("/deletecart/:id",deleteCart);
 router.post("/createcart",createCart);
 router.get("/getallcart",getAllCartUser);
 
-router.get("/findspecific",searchProductsByCategory);
+router.get("/findspecific/:maincategory?/:subcategories?/:lastcategories?/:material?",searchProductsByCategory);
 router.get("/getproductbyID/:id",getproductsbyID);
 
 router.get("/test", auth, (req,res) => {

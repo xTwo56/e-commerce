@@ -20,7 +20,8 @@ function Dashboard() {
     const handleWomenMouseLeave = () => {
       setIsWomenDropdownOpen(false);
     };
-
+    
+console.log(isWomenDropdownOpen)
     return (
         <div className="dashboard">
             <br></br>
@@ -45,6 +46,7 @@ function Dashboard() {
                 <div>GALLERY</div>
             </div>
             {isWomenDropdownOpen && <Womendrop />}
+            
             <hr></hr>
             <div className="flex flex-outer">
                 <div>
