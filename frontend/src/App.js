@@ -11,6 +11,9 @@ import Elegants from './components/elegants/elegant';
 import HandwovenProductList from './components/handwoven/productlist';
 import Dashboard from './components/header/header';
 import CustomProductList from './components/custom/productlist';
+import OurPerspective from './components/perspective/Perspective';
+import DressProductList from './components/dress/productlist';
+import BlogProductList from './components/blog/productlist';
 
 
 
@@ -23,14 +26,16 @@ function App() {
       <ProductList/>
       <Shop/>
       <PopularProductList/>
+      <OurPerspective/>
       <Elegants/>
       <HandwovenProductList/>
+      <DressProductList/>
       <Handbags/>
       <CustomProductList/>
       <Happy/>
       <Values/>
+      <BlogProductList/>
       <Footer/>
-      
     </div>
   );
 }
