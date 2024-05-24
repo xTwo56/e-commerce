@@ -10,13 +10,16 @@ import PopularProductList from './components/popularproduct/productlist';
 import Elegants from './components/elegants/elegant';
 import HandwovenProductList from './components/handwoven/productlist';
 import Dashboard from './components/header/header';
-import CustomProductList from './components/custom/productlst';
+import CustomProductList from './components/custom/productlist';
+import Wishlist from './components/wishlist/wishlist';
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      {/* <Dashboard/>
       <ProductList/>
       <Shop/>
       <PopularProductList/>
@@ -26,7 +29,8 @@ function App() {
       <CustomProductList/>
       <Happy/>
       <Values/>
-      <Footer/>
+      <Footer/> */}
+      <Wishlist/>
     </div>
   );
 }

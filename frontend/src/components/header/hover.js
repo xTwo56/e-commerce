@@ -1,5 +1,6 @@
 import React from "react";
 import "./hover.css";
+import Handbags from '../../assets/handbag.png';
 
 
 const apparel = ['Bottom Wear','Dress Material','Dupattas','Jacket & Shrugs','Kaltans','Kurtas','Kurta Sets','Lehengas','Lounge Wear','Shawls & Stoles','Short Kurti','Tops & Tunics'];
@@ -74,14 +75,14 @@ const Womendrop = ({name,subname}) =>{
             <div className="Main_box">
                 <div className="Apparel">
                     
-                    <div className="top" onClick={()=>handleclick("Women","Apparel")}>Apparel</div>
+                    <div className="top" onClick={()=>handleclick("Women","Apparel")}><h2>Apparel</h2></div>
                     {apparel.map((Apparel,key)=>(
                         <span key={key}>{Apparel}</span>
                     ))}
                 </div>
                 <div className="Apparel">
                     
-                    <div className="top">Sarees</div>
+                    <div className="top"><h2>Sarees</h2></div>
                     {Sarees.map((Apparel,key)=>(
                         <span key={key}>{Apparel}</span>
                     ))}
@@ -89,7 +90,7 @@ const Womendrop = ({name,subname}) =>{
                 </div>
                 <div className="Apparel">
                     
-                    <div className="top">Jewellery</div>
+                    <div className="top"><h2>Jewellery</h2></div>
                     {Jewellery.map((Apparel,key)=>(
                         <span key={key}>{Apparel}</span>
                     ))}
@@ -104,16 +105,20 @@ const Womendrop = ({name,subname}) =>{
 
                 <div className="Apparel">
                     
-                    <div className="top">Handbags</div>
+                    <div className="top"><h2>Handbags</h2></div>
                     {handbags.map((Apparel,key)=>(
                         <span key={key}>{Apparel}</span>
                     ))}
-                    <div className="top">footwear</div>
+                    <div className="top"><h2>Footwear</h2></div>
                     {footwear.map((Apparel,key)=>(
                         <span key={key}>{Apparel}</span>
                     ))}
                     
 
+                </div>
+                <div className="photo">
+                    <img className="pic" src={Handbags}></img>
+                    <img className="pic" src={Handbags}></img>
                 </div>
             </div>
         </>

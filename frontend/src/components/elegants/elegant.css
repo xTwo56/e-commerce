@@ -1,4 +1,4 @@
-.flex{
+.elegantflex{
     display: flex;
     align-items: center;
     gap : 3rem;
@@ -9,7 +9,7 @@
     margin: 0;
 }
 
-.nav{
+.elegantnav{
     display: flex;
     height: 13vw ;
     width: 100vw;
@@ -21,7 +21,7 @@
     margin-top: 80px;
 }
 
-.imgh{
+.elegantimgh{
     border-radius: 100%;
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@
 
 
 @media  screen and (max-width: 768px) {
-    .flex,.nav{
+    .elegantflex,.elegantnav{
         display: grid;
         align-items: center;
         justify-content: center;

@@ -1,5 +1,5 @@
 /* src/components/Product.css */
-.product-card {
+.handproduct-card {
     max-width: 40%;
     min-width: 23%;
     border: 1px solid #e0e0e0;
@@ -9,19 +9,19 @@
     margin: 10px 20px;
 }
 
-.product-card img {
+.handproduct-card img {
     width: 100%;
     height: auto;
 }
 
-.titleContainer {
+.handtitleContainer {
   display: flex;
   flex: 100%;
   margin-left: 5px;
   margin-top: 20px;
 }
 
-.titleContainer h3 {
+.handtitleContainer h3 {
     font-size: 1.2em;
     margin: 10px 0;
     flex: 90%;
@@ -29,7 +29,7 @@
     padding-left: 15px;
 }
 
-.likeImgContainer {
+.handlikeImgContainer {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -38,20 +38,20 @@
     height: auto;
 }
 
-.likeImg {
+.handlikeImg {
   margin-top: 18px;
   max-width: 100%;
   height: auto;
 }
 
-.product-card p {
+.handproduct-card p {
     color: #555;
     font-size: 1.2em;
     margin: 15px;
     text-align: left;
 }
 
-.add-to-cart-btn {
+.handadd-to-cart-btn {
     width: 90%;
     background-color: #fff;
     border: 1px solid #555;
@@ -62,11 +62,11 @@
     transition: all 0.3s ease;
 }
 
-.product-card.hover {
+.handproduct-card.hover {
     border-color: #ff0000;
 }
 
-.product-card.hover .add-to-cart-btn {
+.handproduct-card.hover .handadd-to-cart-btn {
     background-color: #ff0000;
     color: #fff;
     border: 1px solid #ff0000;

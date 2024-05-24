@@ -1,5 +1,5 @@
 /* src/components/ProductList.css */
-.product-list {
+.handproduct-list {
     max-width: 80%;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
 }
 
-.listContainer {
+.handlistContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -15,15 +15,16 @@
   flex: nowrap;
 }
 
-.slidingInfo {
+.handslidingInfo {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 3cm;
 }
 
-.productBar {
+.handproductBar {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
@@ -33,18 +34,18 @@
   margin-bottom: 40px;
 }
 
-.productBar p {
+.handproductBar p {
   margin: 5px 30px;
   padding: 15px;
 }
 
-.productBar p:hover {
+.handproductBar p:hover {
   color: #ff0000;
   cursor: pointer;
 }
 
-button.prevButton,
-button.nextButton {
+button.handprevButton,
+button.handnextButton {
   max-width: 2%;
   max-height: 2%;
   background: none;
@@ -60,31 +61,31 @@ button.nextButton {
   z-index: 1;
 }
 
-.prevButton {
+.handprevButton {
   left: 7%;
 }
-.nextButton {
+.handnextButton {
   right: 7%;
 }
 
-button.prevButton img,
-button.nextButton img {
+button.handprevButton img,
+button.handnextButton img {
   width: 40px;
   height: 40px;
 }
 
-.prevButton img:hover,
-.nextButton img:hover {
-  filter: brightness(20%);
+.handprevButton img:hover,
+.handnextButton img:hover {
+ filter: brightness(20%);
 }
 
-.viewAllText {
+.handviewAllText {
   position: absolute;
   color: #ff0000;
   right: 5%;
   transform: translateY(80%);
 }
 
-.viewAllText:hover {
+.handviewAllText:hover {
   cursor: pointer;
 }

@@ -31,19 +31,19 @@ const CustomProductList = () => {
 
   return (
     <div>
-      <div className='slidingInfo'>
+      <div className='customslidingInfo'>
         <h1>Custom Products</h1>
-        <div className='productBar'>
+        <div className='customproductBar'>
           <p>EMBROIDERED</p>
           <p>SAREES</p>
           <p>KURTAS</p>
           <p>JACKETS-SETS</p>
-          <span className='viewAllText'>VIEW ALL  {'>'} </span>
+          <span className='customviewAllText'>VIEW ALL  {'>'} </span>
         </div>
       </div>
-      <div className='listContainer'>
-        <button className='prevButton'> <img src={prevButton} /></button>
-        <div className="product-list">
+      <div className='customlistContainer'>
+        <button className='customprevButton'> <img src={prevButton} /></button>
+        <div className="customproduct-list">
           {products.map((product, index) => (
             <Product
               key={index}
@@ -53,7 +53,7 @@ const CustomProductList = () => {
             />
           ))}
         </div>
-        <button className='nextButton'> <img src={nextButton} /></button>
+        <button className='customnextButton'> <img src={nextButton} /></button>
       </div>
     </div>
   );

@@ -13,14 +13,9 @@ import Womendrop from "./hover";
 function Dashboard() {
     const [isWomenDropdownOpen, setIsWomenDropdownOpen] = useState(false);
 
-    const handleWomenMouseEnter = () => {
-      setIsWomenDropdownOpen(true);
-    };
-  
-    const handleWomenMouseLeave = () => {
-      setIsWomenDropdownOpen(false);
-    };
-    
+    const handleWomenClick = () => {
+        setIsWomenDropdownOpen(!isWomenDropdownOpen);
+      };
 console.log(isWomenDropdownOpen)
     return (
         <div className="dashboard">
@@ -38,7 +33,7 @@ console.log(isWomenDropdownOpen)
 
             <hr></hr>
             <div className="flex flex-nav">
-                <div onMouseEnter={handleWomenMouseEnter} onMouseLeave={handleWomenMouseLeave}>WOMEN</div>
+                <div onClick={handleWomenClick}>WOMEN</div>
                 <div>MEN</div>
                 <div>FABRICS</div>
                 <div>PERSONAL CARE</div>

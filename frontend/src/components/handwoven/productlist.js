@@ -31,21 +31,21 @@ const HandwovenProductList = () => {
 
   return (
     <div>
-      <div className='slidingInfo'>
+      <div className='handslidingInfo'>
         <h1>Handwoven Sarees from all over Bharat</h1>
-        <div className='productBar'>
+        <div className='handproductBar'>
           <p>CHANDERI</p>
           <p>PATOLA</p>
           <p>PAITHANI</p>
           <p>LEHERIA</p>
           <p>BANARASI</p>
           <p>JAMDANI</p>
-          <span className='viewAllText'>VIEW ALL  {'>'} </span>
+          <span className='handviewAllText'>VIEW ALL  {'>'} </span>
         </div>
       </div>
-      <div className='listContainer'>
-        <button className='prevButton'> <img src={prevButton} /></button>
-        <div className="product-list">
+      <div className='handlistContainer'>
+        <button className='handprevButton'> <img src={prevButton} /></button>
+        <div className="handproduct-list">
           {products.map((product, index) => (
             <Product
               key={index}
@@ -55,7 +55,7 @@ const HandwovenProductList = () => {
             />
           ))}
         </div>
-        <button className='nextButton'> <img src={nextButton} /></button>
+        <button className='handnextButton'> <img src={nextButton} /></button>
       </div>
     </div>
   );

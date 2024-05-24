@@ -31,20 +31,20 @@ const PopularProductList = () => {
 
   return (
     <div>
-      <div className='slidingInfo'>
+      <div className='popularslidingInfo'>
         <h1>Popular Products</h1>
-        <div className='productBar'>
+        <div className='popularproductBar'>
           <p>SAREE</p>
           <p>DUPATTA</p>
           <p>SHIRTS</p>
           <p>JEWELLERY</p>
           <p>HOME DECOR</p>
-          <span className='viewAllText'>VIEW ALL  {'>'} </span>
+          <span className='popularviewAllText'>VIEW ALL  {'>'} </span>
         </div>
       </div>
-      <div className='listContainer'>
-        <button className='prevButton'> <img src={prevButton} /></button>
-        <div className="product-list">
+      <div className='popularlistContainer'>
+        <button className='popularprevButton'> <img src={prevButton} /></button>
+        <div className="popularproduct-list">
           {products.map((product, index) => (
             <Product
               key={index}
@@ -54,7 +54,7 @@ const PopularProductList = () => {
             />
           ))}
         </div>
-        <button className='nextButton'> <img src={nextButton} /></button>
+        <button className='popularnextButton'> <img src={nextButton} /></button>
       </div>
     </div>
   );

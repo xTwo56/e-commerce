@@ -9,19 +9,19 @@ const Product = ({ image, title, price }) => {
 
   return (
     <div
-      className={`product-card ${hover ? 'hover' : ''}`}
+      className={`popularproduct-card ${hover ? 'hover' : ''}`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <img src={Handbags} alt={title} />
-      <div className="titleContainer">
+      <div className="populartitleContainer">
         <h3>{title}</h3>
-        <div className="likeImgContainer">
-          <img src={like} className='likeImg' />
+        <div className="popularlikeImgContainer">
+          <img src={like} className='popularlikeImg' />
         </div>
       </div>
       <p>₹ {price}</p>
-      <button className="add-to-cart-btn">ADD TO CART</button>
+      <button className="popularadd-to-cart-btn">ADD TO CART</button>
     </div>
   );
 };

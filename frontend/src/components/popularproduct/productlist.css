@@ -1,5 +1,5 @@
 /* src/components/ProductList.css */
-.product-list {
+.popularproduct-list {
     max-width: 80%;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
 }
 
-.listContainer {
+.popularlistContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   flex: nowrap;
 }
 
-.slidingInfo {
+.popularslidingInfo {
   position: relative;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.productBar {
+.popularproductBar {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
@@ -33,18 +33,18 @@
   margin-bottom: 40px;
 }
 
-.productBar p {
+.popularproductBar p {
   margin: 5px 30px;
   padding: 15px;
 }
 
-.productBar p:hover {
+.popularproductBar p:hover {
   color: #ff0000;
   cursor: pointer;
 }
 
-button.prevButton,
-button.nextButton {
+button.popularprevButton,
+button.popularnextButton {
   max-width: 2%;
   max-height: 2%;
   background: none;
@@ -60,31 +60,31 @@ button.nextButton {
   z-index: 1;
 }
 
-.prevButton {
+.popularprevButton {
   left: 7%;
 }
-.nextButton {
+.popularnextButton {
   right: 7%;
 }
 
-button.prevButton img,
-button.nextButton img {
+button.popularprevButton img,
+button.popularnextButton img {
   width: 40px;
   height: 40px;
 }
 
-.prevButton img:hover,
-.nextButton img:hover {
+.popularprevButton img:hover,
+.popularnextButton img:hover {
   filter: brightness(20%);
 }
 
-.viewAllText {
+.popularviewAllText {
   position: absolute;
   color: #ff0000;
   right: 5%;
   transform: translateY(80%);
 }
 
-.viewAllText:hover {
+.popularviewAllText:hover {
   cursor: pointer;
 }

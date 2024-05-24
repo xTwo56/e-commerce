@@ -1,28 +1,39 @@
 .Main_box{
     width: 100%;
     height: auto;
-    background-color: yellow;
+    background-color: white;
     margin-top: 10px;
     display: flex;
     position: absolute;
     z-index: 20;
+    gap: 50px;
    
 }
 
 .Apparel{
     display: flex;
     flex-direction: column;
-    background-color: blue;
    margin: 10px;
    justify-content: left;
    align-items: center;
+   gap: 10px;
+   cursor: pointer;
 }
 
 .top{
     padding-bottom: 20px;
     padding-top: 10px ;
 }
+.top h2{
+    color: red;
+}
 .subclass{
     margin-left: 10px;
-    background-color: saddlebrown;
+    
+}
+.photo{
+     margin-left: 15px;  
+}
+.Apparel.hover{
+    background-color: red;
 }

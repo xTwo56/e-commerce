@@ -78,7 +78,7 @@ const products = [
 ];
 
 const Product = ({ product }) => (
-  <div className="product">
+  <div className="prod">
     <img src={product.image} alt={product.name} />
     <h3>{product.name}</h3>
     <p>{product.price}</p>
@@ -86,12 +86,12 @@ const Product = ({ product }) => (
   </div>
 );
 
-const SearchProductList = () => (
-  <div className="product-list">
+const SearchProduct = () => (
+  <div className="list">
     {products.map((product, index) => (
       <Product key={index} product={product} />
     ))}
   </div>
 );
 
-export default SearchProductList;
+export default SearchProduct;
