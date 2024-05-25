@@ -16,9 +16,6 @@ import DressProductList from './components/dress/productlist';
 import BlogProductList from './components/blog/productlist';
 
 
-
-
-
 function App() {
   return (
     <div className="App">

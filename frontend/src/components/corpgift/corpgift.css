@@ -1,10 +1,13 @@
 
 .redHeading {
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 70px;
   }
-  
+  .infodivtext{
+    text-align: left;
+    margin-top: 1cm;
+  }
   .infoDivs {
     margin: 0px 150px;
     font-size: 20px;
@@ -17,7 +20,5 @@
     border: 5px solid red;
     margin-top: 2cm;
     margin-bottom: 2cm;
+    gap: 30px;
   }
- .image{
-    display: flex;
- }

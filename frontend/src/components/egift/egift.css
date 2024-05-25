@@ -1,11 +1,14 @@
 
-.redHeading {
+.Heading {
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 70px;
   }
+  .infotext{
+    text-align: left;
+  }
   
-  .infoDivs {
+  .info {
     margin: 20px 150px;
     font-size: 20px;
     color: #4D4D4D ; 
@@ -15,9 +18,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3cm;
+    margin-top: 2cm;
+    width: 80%;
+    margin-left: 3cm;
   }
   
   .voucher {
-    
+    width: 100%;
+    height: fit-content;
   }
   
