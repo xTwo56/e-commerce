@@ -10,13 +10,38 @@ import s3 from '../../assets/s3.jpeg'
 import dash from '../../assets/dash.png';
 import { useState } from "react";
 import Womendrop from "./hover";
+import Mandrop from "./hoverman";
+import Fabricdrop from "./hoverfabric";
+import Caredrop from "./hovercare";
+import Homedrop from "./hoverhome";
 function Dashboard() {
     const [isWomenDropdownOpen, setIsWomenDropdownOpen] = useState(false);
+    const [isManDropdownOpen, setIsManDropdownOpen] = useState(false);
+    const [isFabricDropdownOpen, setIsFabricDropdownOpen] = useState(false);
+    const [isCareDropdownOpen, setIsCareDropdownOpen] = useState(false);
+    const [isHomeDropdownOpen, setIsHomeDropdownOpen] = useState(false);
+
 
     const handleWomenClick = () => {
         setIsWomenDropdownOpen(!isWomenDropdownOpen);
       };
-console.log(isWomenDropdownOpen)
+      console.log(isWomenDropdownOpen)
+      const handleManClick = () => {
+        setIsManDropdownOpen(!isManDropdownOpen);
+      };
+      console.log(isManDropdownOpen)
+      const handleFabricClick = () => {
+        setIsFabricDropdownOpen(!isFabricDropdownOpen);
+      };
+      console.log(isFabricDropdownOpen)
+      const handleCareClick = () => {
+        setIsCareDropdownOpen(!isCareDropdownOpen);
+      };
+      console.log(isCareDropdownOpen)
+      const handleHomeClick = () => {
+        setIsHomeDropdownOpen(!isHomeDropdownOpen);
+      };
+      console.log(isHomeDropdownOpen)
     return (
         <div className="dashboard">
             <br></br>
@@ -34,14 +59,17 @@ console.log(isWomenDropdownOpen)
             <hr></hr>
             <div className="flex flex-nav">
                 <div onClick={handleWomenClick}>WOMEN</div>
-                <div>MEN</div>
-                <div>FABRICS</div>
-                <div>PERSONAL CARE</div>
-                <div>HOME DECOR</div>
+                <div onClick={handleManClick}>MEN</div>
+                <div onClick={handleFabricClick}>FABRICS</div>
+                <div onClick={handleCareClick}>PERSONAL CARE</div>
+                <div onClick={handleHomeClick}>HOME DECOR</div>
                 <div>GALLERY</div>
             </div>
             {isWomenDropdownOpen && <Womendrop />}
-            
+            {isManDropdownOpen && <Mandrop />}
+            {isFabricDropdownOpen && <Fabricdrop />}
+            {isCareDropdownOpen && <Caredrop />}
+            {isHomeDropdownOpen && <Homedrop />}
             <hr></hr>
             <div className="flex flex-outer">
                 <div>

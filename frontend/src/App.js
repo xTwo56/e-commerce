@@ -19,7 +19,7 @@ import BlogProductList from './components/blog/productlist';
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+    <Dashboard/>
       <ProductList/>
       <Shop/>
       <PopularProductList/>
@@ -32,7 +32,8 @@ function App() {
       <Happy/>
       <Values/>
       <BlogProductList/>
-      <Footer/>
+      <Footer/> 
+       
     </div>
   );
 }
