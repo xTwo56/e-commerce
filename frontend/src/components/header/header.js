@@ -109,9 +109,6 @@ function Dashboard() {
                 </div>
             </div>
 
-
-
-
             <div className="featured">Featured In</div>
             <hr></hr>
             <div className="flex flex-logo">
