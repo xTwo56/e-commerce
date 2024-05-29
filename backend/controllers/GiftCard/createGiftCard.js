@@ -1,5 +1,5 @@
 
-import GiftCard from "../models/GiftCard"
+import { GiftCard } from "../models/GiftCard"
 import { getGiftCardByCode } from "./getGiftCardByCode"
 
 exports.createGiftCard = async (req, res) => {
