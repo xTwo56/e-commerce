@@ -1,6 +1,6 @@
 import mongoose from "./mongoose"
 
-const GiftCardSchema = new mongoose.Schema({
+const GiftCard = new mongoose.Schema({
   id: {
     type: String,
     required: true,
@@ -73,6 +73,6 @@ const GiftCardSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model("Giftcard", GiftCardSchema)
+module.exports = mongoose.model("Giftcard", GiftCard)
 
 
