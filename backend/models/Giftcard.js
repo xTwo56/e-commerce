@@ -1,14 +1,10 @@
 import mongoose from "./mongoose"
 
 const GiftCard = new mongoose.Schema({
-  id: {
-    type: String,
-    required: true,
-    unique: true
-  },
 
   code: {
     type: String,
+    unique: true,
     required: true,
   },
 
@@ -40,11 +36,13 @@ const GiftCard = new mongoose.Schema({
 
   recepient: {
     type: String,
-    required: true,
+    required: function() {
+      return this.recepientRequired
+    },
   },
 
   enable: {
-    type: String,
+    type: Boolean,
     default: true
   },
 
@@ -70,7 +68,18 @@ const GiftCard = new mongoose.Schema({
       }
     },
     required: true
+  },
+
+  codePattern: {
+    type: String,
+    default: null
+  },
+
+  recepientRequired: {
+    type: Boolean,
+    required: true
   }
+
 })
 
 module.exports = mongoose.model("Giftcard", GiftCard)
